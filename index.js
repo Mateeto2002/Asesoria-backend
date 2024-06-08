@@ -17,7 +17,7 @@ const port = 3002;
 getConnection();
 //app.use('/proyecto', require('./router/proyecto'));
 //app.use('/etapa', require('./router/etapa'));
-app.use('cliente', require('./router/cliente'));
+app.use('/cliente', require('./router/cliente'));
 //app.use('/universidad', require('./router/universidad'));
 //app.use('/tipo', require('./router/tipoProyecto'));
 
