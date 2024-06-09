@@ -15,11 +15,11 @@ app.use(cors());
 const port = 3002;
 
 getConnection();
-//app.use('/proyecto', require('./router/proyecto'));
-//app.use('/etapa', require('./router/etapa'));
+app.use('/proyecto', require('./router/proyecto'));
+app.use('/etapa', require('./router/etapa'));
 app.use('/cliente', require('./router/cliente'));
-//app.use('/universidad', require('./router/universidad'));
-//app.use('/tipo', require('./router/tipoProyecto'));
+app.use('/universidad', require('./router/universidad'));
+app.use('/tipo_proyecto', require('./router/tipo_proyecto'));
 
 
 app.listen(port, () => {
