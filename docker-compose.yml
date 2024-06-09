@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  proyecto-docker:
+    container_name: proyecto-docker
+    image: proyecto-docker:v1
+    build: 
+    
+      context: .
+    ports:
+      - "4005:4005"
+    networks:
+      - proyectos-app
+
+
+
+networks:
+  proyectos-app:
+
